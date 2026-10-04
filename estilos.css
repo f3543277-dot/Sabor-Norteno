@@ -1,0 +1,510 @@
+/* ==================================
+   CONFIGURACIÓN GENERAL
+================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf2;
+    color: #333333;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ==================================
+   CONTENEDOR
+================================== */
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ==================================
+   ENCABEZADO
+================================== */
+
+.encabezado {
+    background-color: #542d1d;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 7%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #ffc857;
+}
+
+.logo p {
+    font-size: 13px;
+}
+
+
+/* ==================================
+   NAVEGACIÓN
+================================== */
+
+.navegacion ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.navegacion a:hover {
+    color: #ffc857;
+}
+
+
+/* ==================================
+   INICIO
+================================== */
+
+.inicio {
+    min-height: 90vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("imagenes/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    padding: 40px 20px;
+}
+
+.inicio-contenido {
+    max-width: 800px;
+}
+
+.inicio h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.inicio .subtitulo {
+    color: #ffc857;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+/* ==================================
+   BOTONES
+================================== */
+
+.boton {
+    display: inline-block;
+
+    background-color: #d2691e;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #a84f15;
+    transform: translateY(-2px);
+}
+
+
+/* ==================================
+   SECCIONES
+================================== */
+
+.seccion {
+    padding: 80px 0;
+}
+
+.seccion h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #542d1d;
+
+    margin-bottom: 10px;
+}
+
+.descripcion-seccion {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    color: #666666;
+}
+
+
+/* ==================================
+   NOSOTROS
+================================== */
+
+.nosotros-contenido {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.nosotros-texto h3 {
+    color: #d2691e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.nosotros-texto p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.nosotros-imagen img {
+    border-radius: 10px;
+
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+}
+
+
+/* ==================================
+   MENÚ
+================================== */
+
+.menu {
+    background-color: #f7ead7;
+}
+
+.platos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ==================================
+   TARJETAS
+================================== */
+
+.tarjeta {
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 20px;
+}
+
+.tarjeta h3 {
+    color: #542d1d;
+
+    margin-bottom: 10px;
+
+    font-size: 22px;
+}
+
+.precio {
+    color: #d2691e;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/* ==================================
+   GALERÍA
+================================== */
+
+.galeria {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ==================================
+   CONTACTO
+================================== */
+
+.contacto {
+    background-color: #f7ead7;
+}
+
+.contacto-contenido {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 50px;
+}
+
+.informacion-contacto h3 {
+    color: #542d1d;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.informacion-contacto p {
+    margin-bottom: 20px;
+}
+
+
+/* ==================================
+   FORMULARIO
+================================== */
+
+.formulario {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h3 {
+    color: #542d1d;
+
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid #d2691e;
+
+    border-color: transparent;
+}
+
+
+/* ==================================
+   PIE DE PÁGINA
+================================== */
+
+footer {
+    background-color: #321b12;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h2 {
+    color: #ffc857;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* ==================================
+   DISEÑO RESPONSIVE
+================================== */
+
+@media (max-width: 900px) {
+
+    .encabezado {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navegacion ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio h2 {
+        font-size: 40px;
+    }
+
+    .nosotros-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .platos {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .contacto-contenido {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .inicio h2 {
+        font-size: 32px;
+    }
+
+    .inicio p {
+        font-size: 17px;
+    }
+
+    .platos {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .navegacion ul {
+        gap: 10px;
+    }
+
+}
